@@ -1,0 +1,633 @@
+<style>
+    div.timeline {
+        overflow: auto;
+        white-space: nowrap;
+        width: 85%;
+        display: inline-block;
+        margin-left: 7.5%;
+        /*noinspection CssInvalidPropertyValue*/
+        -webkit-mask: -webkit-linear-gradient(
+                left,
+                rgba(255,255,255,0),
+                rgba(255,255,255,1) 15%,
+                rgba(255,255,255,1) 85%,
+                rgba(255,255,255,0)
+        );
+    }
+
+    .data {
+        display: none;
+    }
+
+    .champ-card {
+        width: 75%;
+        margin: 0 12.5% 0 12.5%;
+    }
+
+    .year {
+        padding: 0;
+    }
+
+    div.timeline .date {
+        border-radius: 50px;
+        display: inline-block;
+        color: black;
+        font-size: 20px;
+        padding: 0 14px 0 14px;
+        margin-left: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    div.timeline .date p {
+        padding: 0;
+    }
+
+    div.timeline .date:hover {
+        background-color: #777;
+    }
+
+    div.timeline .date.active {
+        background-color: rgb(102,216,238);
+        color: white;
+    }
+
+    div.line{
+        transform-origin: 0 100%;
+        display: inline-block;
+        height: 3px; /* Line width of 3 */
+        width: 100px;
+        margin-bottom: 5px;
+        margin-left: 3px;
+        background: #000; /* Black fill */
+    }
+
+    div.line-thin{
+        transform-origin: 0 100%;
+        height: 1px; /* Line width of 3 */
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 0;
+        background: #000; /* Black fill */
+    }
+</style>
+<div class="timeline">
+    <div class="date">
+        <p class="year">1878<p>
+        <div class="data">
+            <ul>
+                <li>G.W. Thompson founds Burlington Collegiate Institute and Commercial College to prepare young men and women for "the business cares and responsibilities of life."</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1879<p>
+        <div class="data">
+            <ul>
+                <li>
+                    The College changes its name to Queen City Collegiate Institute and Commercial College.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1884<p>
+        <div class="data">
+            <ul>
+                <li>E. George Evans acquires the school and changes its name to Burlington Business College.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1905<p>
+        <div class="data">
+            <ul>
+                <li>The College is located on Bank Street.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1911<p>
+        <div class="data">
+            <ul>
+                <li>A fire breaks out at noon in the two-room College. A few students climb in a back window to rescue the books—saving nearly all of them. The College is then moved to Main Street, above what is now Muddy Waters Coffee Shop and Nectar's Bar and Lounge.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1920<p>
+        <div class="data">
+            <ul>
+                <li>A. Gordon Tittemore acquires the College. (He would lead it for the next 36 years.)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1956<p>
+        <div class="data">
+            <ul>
+                <li>C. Bader Brouilette, in partnership with Albert Jensen, acquires the College. Brouilette becomes president.</li>
+                <li>The College changes its name to Green Mountain College of Commerce, which becomes Champlain College of Commerce.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1958<p>
+        <div class="data">
+            <ul>
+                <li>The College moves to the Hill Section of Burlington when President Brouilette purchases and renovates Freeman Hall on South Willard Street, a carriage house constructed as part of the former Morgan family residence. </li>
+                <li>The College's name is changed to Champlain College.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1960<p>
+        <div class="data">
+            <ul>
+                <li>The Giffords' home on the corner of South Willard and Maple Streets is purchased by the College, and becomes Edith Bader Hall, home to the College's administrative offices and library (now a first year residence hall).</li>
+                <li>Champlain is accredited as a junior college of business by the Accrediting Commission of Business Schools.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1961<p>
+        <div class="data">
+            <ul>
+                <li>The College builds a wing onto the north end of Freeman Hall to house a student lounge and a 90-seat lecture room. The wing is soon expanded to provide additional laboratory and classroom space.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1962<p>
+        <div class="data">
+            <ul>
+                <li>The Bigelow family home on South Willard Street is purchased and becomes Cushing Hall.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1963<p>
+        <div class="data">
+            <ul>
+                <li>Champlain acquires a punch-card computer.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1964<p>
+        <div class="data">
+            <ul>
+                <li>The College embarks on its first construction project and builds Hamrick Hall, which becomes a student life facility.</li>
+                <li>The College builds a second wing onto the south end of Freeman Hall to house a library and new classrooms.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1965<p>
+        <div class="data">
+            <ul>
+                <li>Champlain residential students move into the College's first on-campus dormitories: Jensen and Sanders Halls.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1966<p>
+        <div class="data">
+            <ul>
+                <li>Champlain continues to expand its dormitory space with the acquisition of Ward Hall (396 Main Street as of 2001), North House and Smith House.</li>
+                <li>Champlain receives final approval from the U.S. Treasury to reorganize as a non-profit organization.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1967</p>
+        <div class="data">
+            <ul>
+                <li>Whiting Hall is purchased and becomes a dormitory.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1968</p>
+        <div class="data">
+            <ul>
+                <li>The college purchases Lyman Hall and Brault House (now called Pearl Hall) for use as a dormitories.</li>
+                <li>The Faculty Senate is formed.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1969</p>
+        <div class="data">
+            <ul>
+                <li>Champlain's new computer, an IBM 1130, arrives in the spring. It has a removable disk drive that holds 256K of storage (one-twenty-eight-hundredth of the space found on a typical CD today).</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1970s</p>
+        <div class="data">
+            <ul>
+                <li>New programs are initiated in the area of social services. </li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1970</p>
+        <div class="data">
+            <ul>
+                <li>An addition is built onto Hamrick Hall.</li>
+                <li>The College launches a major capital campaign to fund a new academic facility adjoining Freeman Hall, which will be named Joyce Learning Center.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1972</p>
+        <div class="data">
+            <ul>
+                <li>The Joyce Learning Center opens its doors. It houses a computer center, classrooms and an expanded library. The new library space is funded entirely by a gift from President C. Bader Brouilette and his family.</li>
+                <li>Rowell Hall is purchased and becomes a dormitory.</li>
+                <li>Champlain gains full accreditation as a Junior College by New England Association of Schools and Colleges</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1973</p>
+        <div class="data">
+            <ul>
+                <li>Hill Hall is acquired and becomes a dormitory.</li>
+                <li>Champlain reorganizes its existing academic programs for traditional students into three Divisions: Business Administration, Secretarial Science and Human Services (later known as Community Services).</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1975</p>
+        <div class="data">
+            <ul>
+                <li>The men's alpine ski team wins the national championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1977</p>
+        <div class="data">
+            <ul>
+                <li>C. Bader Brouilette retires, and Dr. Robert Skiff is inaugurated as President.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1978</p>
+        <div class="data">
+            <ul>
+                <li>Pearl Annex is remodeled and becomes the Student Services Office.</li>
+                <li>Women's alpine and mixed ski teams win national championships.</li>
+                <li>The College celebrates its centennial.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1979</p>
+        <div class="data">
+            <ul>
+                <li>The College purchases 225 South Willard Street (now called McDonald Hall) for use as a dormitory.</li>
+                <li>The men's alpine ski team wins national championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1980</p>
+        <div class="data">
+            <ul>
+                <li>The Winterbotham estate on the corner of South Willard and Main streets is purchased by the College to house administrative offices.</li>
+                <li>Edith Bader Hall becomes a dormitory.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1982</p>
+        <div class="data">
+            <ul>
+                <li>Champlain opens a Computer Camp for children and Computer Resource Training Center for businesspeople.</li>
+                <li>The Westervelt estate is purchased and major renovations take place. The main house becomes a dormitory and is named the Lola Aiken Hall. It also houses the Eunice Silsby Morgan Room. The carriage barn is converted into classroom space and is named Hilton Wick Hall.</li>
+                <li>A new building is erected, housing more classrooms and laboratories. It is named Willett Foster Hall and is home to the Engineering Technology Division.</li>
+                <li>Both the men and women's alpine ski teams win national championships.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1983</p>
+        <div class="data">
+            <ul>
+                <li>The Support-A-Student Campaign is formed to help provide scholarship money for needy and deserving students.</li>
+                <li>The women's alpine ski team wins national championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1984</p>
+        <div class="data">
+            <ul>
+                <li>The College purchases Kolk House, which is renamed Durick Hall.</li>
+                <li>The women's alpine ski team wins national championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1985</p>
+        <div class="data">
+            <ul>
+                <li>The men's and women's alpine ski teams both win the NJCAA National Championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1986</p>
+        <div class="data">
+            <ul>
+                <li>The women's field hockey team wins NJCAA National Championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1987</p>
+        <div class="data">
+            <ul>
+                <li>The Single Parents Program is a new joint venture with the State of Vermont.</li>
+                <li>The women's alpine ski team wins national championship.</li>
+                <li>The College announces The Campaign for Champlain: Building the Future, a $6.5 million capital campaign to raise funds for the construction of a 28,000-sq.-foot campus center building, financial aid endowment and spendable scholarship money. At this time, it is the largest fund-raising effort ever undertaken by a two-year college.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1988</p>
+        <div class="data">
+            <ul>
+                <li>Construction begins on the Campus Center building in the former location of the Smith House on Maple Street.</li>
+                <li>Champlain Board of Trustees votes to allow the College to create two-plus-two baccalaureate-level programs in Accounting and Business Management.</li>
+                <li>312 Maple St., once home to former First Lady Grace Coolidge, is purchased by the College and soon renamed the Grace Goodhue Coolidge House.</li>
+                <li>Men's and women's alpine ski teams win national championships.</li>
+                <li>Women's field hockey team wins NJCAA National Championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1989</p>
+        <div class="data">
+            <ul>
+                <li>The Hauke family pledges the first million-dollar gift in the College's history and a new campus center is named in their honor.</li>
+                <li>Champlain's 10,000th graduate crosses the stage at Commencement.</li>
+                <li>225 South Willard is renamed McDonald Hall after former Director of Admissions Verne McDonald upon his retirement.</li>
+                <li>Freeman Hall is renovated and reconfigured. The wings added in the 1960s are removed, and the foundations are excavated to create a three-story building.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1990</p>
+        <div class="data">
+            <ul>
+                <li>Vermont Insurance Institute is created at Champlain.</li>
+                <li>56 Summit Street (a former UVM fraternity, now called Summit Hall) is purchased by the College.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1992</p>
+        <div class="data">
+            <ul>
+                <li>Dr. Roger H. Perry is inaugurated into presidency as Dr. Robert Skiff steps down.</li>
+                <li>Winterbotham Hall is renamed Skiff Hall in honor of former President Skiff.</li>
+                <li>The former UVM fraternity Phi Mu Delta on South Willard Street becomes Bankus Hall, and is named after Champlain's Chief Financial Officer, John Bankus.</li>
+                <li>College begins to offer bachelor's degree programs in Accounting and Business Management, thanks in part to a major donation from philanthropist and educator Walter Cerf.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1993</p>
+        <div class="data">
+            <ul>
+                <li>The College establishes SuccessNet (later referred to as Champlain College Online), Vermont's first computer-based, online distance learning program.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1994</p>
+        <div class="data">
+            <ul>
+                <li>4 Cedar Lane (now called Carriage House) is purchased by the College.</li>
+                <li>The College adds 20 additional bachelor's programs under the new Division of Professional Studies.</li>
+                <li>Two new dorms, East House (renamed Schillhammer Hall in June 2008) and South House are added to campus.</li>
+                <li>Hill Hall is officially designated the International House where many foreign students live with American peers.</li>
+                <li>Vermont Business Institute is created offering firms, computer training and internet access.</li>
+                <li>Women's soccer team wins NJCAA National Championship.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1995</p>
+        <div class="data">
+            <ul>
+                <li>Champlain offers its academic programs at satellite campuses in Israel.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1998</p>
+        <div class="data">
+            <ul>
+                <li>The Robert E. and Holly D. Miller Information Commons, the College's state-of-the-art library, welcomes its first students.</li>
+                <li>The College begins a satellite program in United Arab Emirates.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">1999</p>
+        <div class="data">
+            <ul>
+                <li>The first annual Summer Reading Program features a visit by Dominican-born author Julia Alvarez.</li>
+                <li>Champlain hospitality students operate a new café called "The View."</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2000</p>
+        <div class="data">
+            <ul>
+                <li>Terry F. Allen pledges $1.5 million for scholarships for Vermont students.</li>
+                <li>Governor Howard Dean comes to campus to announce Putnam Investment's new work@home jobs and online training through Champlain College's online Division.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2001</p>
+        <div class="data">
+            <ul>
+                <li>Champlain creates a partnership in India to offer its degree programs to students in that country.</li>
+                <li>Teen writers descend on Champlain for first annual Young Vermont Writers' Conference.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2002</p>
+        <div class="data">
+            <ul>
+                <li>The College kicks off The Power of Three Capital Campaign to raise funds for three exciting new buildings.</li>
+                <li>Champlain begins its first master's program in Managing Innovation & Information Technology.</li>
+                <li>The College hosts Vermont's first Governor's Institute on Information Technology.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2003</p>
+        <div class="data">
+            <ul>
+                <li>The College celebrates its 125-year anniversary.</li>
+                <li>The first of three new buildings opens to students: The Main Street Suites and Conference Center (now called Boardman Hall).</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2004</p>
+        <div class="data">
+            <ul>
+                <li>The campus celebrates the dedication of the S.D. Ireland Family Center for Global Business & Technology, an academic center that enhances Champlain's ability to put students to work on real business and technology projects.</li>
+                <li>Trustees announce the creation of the College's first endowed chair, naming it in honor of President Roger Perry. The $1 million academic fund is called The Doctor Roger H. Perry Endowed Chair.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2005</p>
+        <div class="data">
+            <ul>
+                <li>Dr. David F. Finney of New York University succeeds Champlain President Dr. Roger H. Perry on July 1, 2005. His Inauguration as the College's seventh President is celebrated on November 19, 2005.</li>
+                <li>The Champlain College Workforce Development Center is instituted, enhancing the College's capacity to be a catalyst for economic development.</li>
+                <li>The campus celebrates the September dedication of the IDX Student Life Center. Complete with a gym, fitness center, dining hall and student activity space, it is the third building to be constructed as part of The Power of Three capital campaign.</li>
+                <li>Champlain welcomes the Vermont Global Trade Partnership to its campus, serving businesses that want to explore markets abroad and putting students to work on trade research.</li>
+                <li>The College launches its second master's program: a highly integrated online MBA.</li>
+                <li>The College is ranked in the top tier of the "Best Comprehensive Colleges in the North" by U.S. News & World Report's "America's Best Colleges" in 2006.</li>
+                <li>The College reorganizes its academic programs for traditional undergraduate and graduate students into four divisions: Business, Communication & Creative Media, Information Technology & Sciences and Education & Human Studies. </li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2006</p>
+        <div class="data">
+            <ul>
+                <li>The College institutes three new centers on campus: the Emergent Media Center® (EMC), the Center for Digital Investigation, and The Conference and Event Center.</li>
+                <li>President Finney announces two new scholarship programs: The New American Student Scholarship for students with refugee or asylum status and the Vermont First Scholarship for first-generation college students from the Green Mountain State.</li>
+                <li>The College launches a new program called Build Your Own Business (BYOBiz®), which assists young entrepreneurs with the startup of their original businesses while they attend Champlain.</li>
+                <li>The College works with the City of Burlington and its surrounding community to create a new master plan for the campus.</li>
+                <li>The Division of Continuing Education is renamed the Division of Online and Continuing Education to reflect Champlain's leadership and growth in online programs; the name soon changes to Continuing Professional Studies</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2007</p>
+        <div class="data">
+            <ul>
+                <li>Champlain's campus comprises nearly 40 buildings on 22 acres: a blend of Victorian-era mansions and high-tech facilities nestled in Burlington's historic Hill Section.</li>
+                <li>The College launches the Accounting Excellence Scholarship Fund, celebrating a combined 200 years of teaching excellence by Champlain's Accounting faculty.</li>
+                <li>Champlain creates a study-abroad campus in the heart of Montreal, Canada. Starting in Fall 2007, students may spend a semester abroad in Montreal taking Champlain courses. It's believed to be the first American campus in Montreal, which is also one of the largest French-speaking cities in the world.</li>
+                <li>Champlain College rolls out its inaugural Vermont First Scholarship, attracting 30 first-generation college students.</li>
+                <li>Notable author Dave Eggers visits the College.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2008</p>
+        <div class="data">
+            <ul>
+                <li>The College opens two Maple Street residence halls: the newly-constructed Lakeview Hall and Adirondack Hall, an 1897 carriage house that was originally part of the property associated with Champlain's McDonald Hall.</li>
+                <li>Champlain acquires Woodbury College and creates the Woodbury Institute at Champlain, which provides the foundation for the College's new master's program in Mediation & Applied Conflict Studies.</li>
+                <li>The College opens its campus in Dublin, Ireland, called Champlain College Dublin.</li>
+                <li>The BYOBiz program launches its first annual Elevator Pitch Contest.</li>
+                <li>Governor Jim Douglas announces an incubator project with Champlain College to award grants to small businesses developing state-of-the-art software.</li>
+                <li>Champlain's Workforce Development Center delivers online workshops in human resource management.</li>
+                <li>The College purchases the Eagles Club property, located on Maple and St. Paul Streets.</li>
+                <li>Notable names visit the College: environmental activist Bill McKibben; justice activist Daryl Hunt; author T.C. Boyle; U.S. Senator Patrick Leahy.</li>
+                <li>The College is ranked in the top tier of "The Best Comprehensive Colleges in the North" by U.S. News & World Report's "America's Best Colleges" in 2009.</li>
+                <li>The Core Division is established at the College.</li>
+                <li>The College launches the Life Experience & Action Dimension (LEAD) program.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2009</p>
+        <div class="data">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2010</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2011</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2012</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2013</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2014</p>
+        <div class="data">
+            <ul> </ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2015</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2016</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="date">
+        <p class="year">2017</p>
+        <div class="data">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+<div id="timeline-content" class="champ-card"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("<div class='line'></div>").insertBefore(".date:first-child");
+        $("<div class='line'></div>").insertAfter(".date");
+        $("<div class=\"line-thin\"></div>").insertAfter(".timeline");
+        document.getElementById("timeline-content").innerHTML = '<h2>' + document.getElementsByClassName("date")[0].getElementsByClassName("year")[0].innerHTML + '</h2>' +
+            document.getElementsByClassName("date")[0].getElementsByClassName("data")[0].innerHTML;
+        document.getElementsByClassName("date")[0].className += " active";
+    });
+
+    $('.date').on('click', function() {
+        var html = '<h2>' + this.getElementsByClassName("year")[0].innerHTML + '</h2>' +
+            this.getElementsByClassName("data")[0].innerHTML;
+        document.getElementById("timeline-content").innerHTML = html;
+        var dates = document.getElementsByClassName("date");
+        for (var i = 0; i < dates.length; i++) {
+            dates[i].className = dates[i].className.replace(" active", "");
+        }
+        this.className += " active";
+    });
+</script>
