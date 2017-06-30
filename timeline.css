@@ -21,7 +21,7 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    /*font: inherit;*/
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -29,7 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
     display: block;
 }
-body {
+#page-content {
     line-height: 1;
 }
 ol, ul {
@@ -62,9 +62,12 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Fira Sans", sans-serif;
     color: #383838;
     background-color: #f8f8f8;
+}
+
+#page-content {
+    font-family: "Fira Sans", sans-serif;
 }
 
 a {
